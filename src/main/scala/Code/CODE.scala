@@ -16,8 +16,8 @@ object CODE {
 
 
   var x = 0
-  val pocet = ListBuffer("1", "2", "3", "4", "5", "6", "7", "8", "9")
-  while(x < 10 ) {
+  val pocet: ListBuffer[String] = ListBuffer("1", "2", "3", "4", "5", "6", "7", "8", "9")
+  while(x < 9 ) {
     if (((list.head == list(1)) && (list(1) == list(2))) || (list(3) == list(4) && list(4) == list(5))|| (list(6) == list(7) && list(6) == list(8))
       || (list.head == list(3) && list.head == list(6))|| (list(1) == list(4) && list(1) == list(7))|| (list(2) == list(5) && list(2) == list(8))
       || (list.head == list(4) && list.head == list(8))|| (list(6) == list(4) && list(6) == list(2))){
@@ -47,7 +47,6 @@ object CODE {
     println (list(3) + "|" + list(4) + "|" +list(5))
     println ("_ _ _")
     println (list(6) + "|" + list(7) + "|" +list(8))
-    println(list)
     x+=1
   }
   println("Bohuzel nikdo nevyhral :(")
